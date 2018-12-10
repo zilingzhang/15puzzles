@@ -17,7 +17,7 @@ function orthophoto = find_square(I)
     % Look at the blobs and find the first one that looks like a square.
     fFoundSquare = false; % This will be set to true if a square is found
     for i=1:nBlobs
-        if blobs(i).Area < 200000
+        if blobs(i).Area < 400000
         continue;
         end
 

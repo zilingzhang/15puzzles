@@ -43,7 +43,7 @@ function [  ] = SearchBestMove( userInput , goalSt )
  				list(x).nodeId = 0;		%dummy
 				list(x).parentId = S.nodeId;
             end
-            %slide right to left    if col < 3
+            %slide right to left    if col < 4
             if col < 4
                 x = x + 1;
                 list(x).node = S.node;
@@ -145,7 +145,7 @@ function [  ] = SearchBestMove( userInput , goalSt )
 			loops = loops+1;
 		else
 			%toc
-			% print sequence
+			% print path
             goalFound = 1;
 			nBest = nBest - 1;
 			curNode=bestNodes(nBest).node;

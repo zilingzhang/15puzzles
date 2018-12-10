@@ -3,9 +3,7 @@ function [ costH1 , costH2 ] = CostFunc( userInput , goalSt )
 %   Uses heuristcs to calculate the node costs to find the best node
     
     % how many tiles are in the wrong positions
-%     userInput
-%     goalSt
-    
+
     costH1 = sum (sum (~(userInput == goalSt)));
     
     % how many moves for each tile to reach the right position
@@ -21,7 +19,5 @@ function [ costH1 , costH2 ] = CostFunc( userInput , goalSt )
             end
         end
     end
-%      costH1
-%      costH2
 end
 
