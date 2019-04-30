@@ -25,7 +25,7 @@ for i=0:3
     tiles = slice_to_tiles(orthophoto);
     % Detect number on 16 tiles
     [candidate_score,candidate_tiles] = detect_tiles(net,tiles,gpu,verbose);
-    candidate_score
+    candidate_score;
     if candidate_score > best_orientation_score
         detected_tiles = candidate_tiles;
         best_orientation_score = candidate_score;
